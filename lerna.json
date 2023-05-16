@@ -4,7 +4,11 @@
 	"useNx": true,
 	"useWorkspaces": true,
 	"version": "1.0.0",
-	"packages": [".", "apps/*", "libs/*"],
+	"packages": [
+		".",
+		"frontend/*",
+		"backend/*"
+	],
 	"command": {
 		"version": {
 			"conventionalCommits": true,
