@@ -33,8 +33,7 @@ jobs:
               run: |
                   yarn install
                   npm install -g lerna
-                  npm install -g nx 
-                  npm install -g @nrwl/nx-cloud
+                  npm install -g nx
 
             - name: Lint
               run: lerna run lint --since
