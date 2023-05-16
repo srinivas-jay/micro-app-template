@@ -5,8 +5,8 @@
 	"license": "MIT",
 	"workspaces": [
 		".",
-		"frontend/*",
-		"backend/*"
+		"frontend/**",
+		"backend/**"
 	],
 	"scripts": {
 		"prepare": "husky install"

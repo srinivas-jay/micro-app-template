@@ -6,8 +6,8 @@
 	"version": "1.0.0",
 	"packages": [
 		".",
-		"frontend/*",
-		"backend/*"
+		"frontend/**",
+		"backend/**"
 	],
 	"command": {
 		"version": {
