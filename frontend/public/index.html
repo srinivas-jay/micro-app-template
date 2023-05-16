@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Micro App chatbot</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/muicss/0.10.3/css/mui.min.css"
+			integrity="sha512-rzzqoedGiSVG9cdcCh9C0iMTMxV55u/GRqXhPdrPfDFCsFSVsV5Kk82CRe1pxYXv6gn1lXGdmKR/eGpBe91H+g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<div class="mui-container">
+			<div id="root" />
+			<h1>Your Micro App chatbot is not here.</h1>
+			<h3>You need to load a shell Container.</h3>
+			<p>
+				You can either use Webpack 5 module Federation or Single SPA.
+				Both are supported.
+			</p>
+			<p>
+				For Webpack 5 module Federation, you need to add the following
+				configuration to your webpack.config:
+				<br />
+				<br />
+				<code>
+					plugins: [ <br />
+					new ModuleFederationPlugin({ <br />
+					...moduleFedConfigs, <br />
+					remotes: { <br />
+					'chatbot': './remoteEntry.js' <br />
+					},<br />
+					})<br />
+					],
+				</code>
+				<br />
+				<a href="https://webpack.js.org/concepts/module-federation/"
+					>For More Details</a
+				>
+			</p>
+			<p>
+				For Single SPA you need to use Single SPA Root Config or layout.
+				<br />
+				<a
+					href="https://single-spa.js.org/docs/configuration/#registering-applications"
+				>
+					For More Details</a
+				>
+			</p>
+		</div>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/muicss/0.10.3/js/mui.min.js"
+			integrity="sha512-X2R4Ev8iL/Xz4/J4ztf+COKz0QixPKxsqqgALlfqJTmkkxIz/9SJUMqZoGdPbakE+Azv1alk5hGYGEAWalfpCA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+	</body>
+</html>

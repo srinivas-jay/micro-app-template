@@ -1,0 +1,11 @@
+{
+	"extends": "../tsconfig.base.json",
+	"compilerOptions": {
+		"isolatedModules": true,
+		"outDir": "dist",
+		"module": "ESNext",
+		"declarationDir": "dist/types",
+		"rootDir": ".",
+		"baseUrl": ".",
+	}
+}

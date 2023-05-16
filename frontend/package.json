@@ -1,0 +1,22 @@
+{
+	"name": "@inscriptors/micro-app",
+	"version": "0.0.0",
+	"description": "MicroApp",
+	"homepage": "https://github.com/inscriptors/neuro-nexus#readme",
+	"bugs": {
+		"url": "https://github.com/inscriptors/neuro-nexus/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/inscriptors/neuro-nexus.git"
+	},
+	"license": "MIT",
+	"author": "Srinivas Jay <srini.j135@gmail.com>",
+	"scripts": {
+		"build": "concurrently \"nx buildSingleSpa @inscriptors/micro-app\" \"nx buildWebpack @inscriptors/micro-app\" ",
+		"lint": "eslint --ext .ts,.tsx,.js,.jsx .",
+		"lint:fix": "eslint --ext .ts,.tsx,.js,.jsx . --fix",
+		"start": "nx serve @inscriptors/micro-app",
+		"startMicroApp": "nx startStandalone @inscriptors/micro-app"
+	}
+}

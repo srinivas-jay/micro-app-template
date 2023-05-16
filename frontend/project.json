@@ -1,0 +1,94 @@
+{
+	"name": "@inscriptors/micro-app",
+	"$schema": "../node_modules/nx/schemas/project-schema.json",
+	"sourceRoot": "./frontend/src",
+	"projectType": "application",
+	"targets": {
+		"serve": {
+			"executor": "@nx/webpack:dev-server",
+			"options": {
+				"buildTarget": "@inscriptors/micro-app:buildWebpack",
+				"port": 3001,
+				"host": "localhost",
+				"open": true
+			}
+		},
+		"buildWebpack": {
+			"executor": "@nx/webpack:webpack",
+			"outputs": [
+				"{options.outputFile}"
+			],
+			"options": {
+				"index": "frontend/public/index.html",
+				"main": "frontend/src/index.jsx",
+				"tsConfig": "frontend/tsconfig.json",
+				"outputPath": "frontend/dist",
+				"webpackConfig": "frontend/webpack.config.js",
+				"generatePackageJson": false,
+				"progress": true
+			},
+			"dependsOn": [
+				{
+					"target": "build",
+					"projects": "dependencies"
+				}
+			]
+		},
+		"buildStandalone": {
+			"executor": "@nx/webpack:webpack",
+			"outputs": [
+				"{options.outputFile}"
+			],
+			"options": {
+				"index": "frontend/standalone/index.html",
+				"tsConfig": "frontend/tsconfig.json",
+				"main": "frontend/standalone/root.js",
+				"webpackConfig": "frontend/webpack.standalone.config.js",
+				"outputPath": "frontend/dist-standalone"
+			},
+			"dependsOn": [
+				{
+					"target": "build",
+					"projects": "dependencies"
+				}
+			]
+		},
+		"startStandalone": {
+			"executor": "@nx/webpack:dev-server",
+			"options": {
+				"buildTarget": "@inscriptors/micro-app:buildStandalone",
+				"port": 5001,
+				"host": "localhost",
+				"open": true
+			},
+			"dependsOn": [
+				{
+					"target": "build",
+					"projects": "dependencies"
+				}
+			]
+		},
+		"buildSingleSpa": {
+			"executor": "@nx/webpack:webpack",
+			"outputs": [
+				"{options.outputFile}"
+			],
+			"options": {
+				"index": "frontend/public/index.html",
+				"main": "frontend/src/single-spa.js",
+				"tsConfig": "frontend/tsconfig.json",
+				"outputPath": "frontend/dist/single-spa",
+				"webpackConfig": "frontend/webpack.singlespa.config.js",
+				"generatePackageJson": false,
+				"progress": true
+			},
+			"dependsOn": [
+				{
+					"target": "build",
+					"projects": "dependencies"
+				}
+			]
+		}
+	},
+	"tags": []
+}
