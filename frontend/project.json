@@ -10,7 +10,8 @@
 				"buildTarget": "@inscriptors/micro-app:buildWebpack",
 				"port": 3001,
 				"host": "localhost",
-				"open": true
+				"open": true,
+				"proxyConfig": "frontend/proxy.conf.json"
 			}
 		},
 		"buildWebpack": {
@@ -59,7 +60,8 @@
 				"buildTarget": "@inscriptors/micro-app:buildStandalone",
 				"port": 5001,
 				"host": "localhost",
-				"open": true
+				"open": true,
+				"proxyConfig": "frontend/proxy.conf.json"
 			},
 			"dependsOn": [
 				{
