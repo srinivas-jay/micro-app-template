@@ -7,11 +7,11 @@ const SystemJSPublicPathPlugin = require('systemjs-webpack-interop/SystemJSPubli
 const singleSpaWebpackConfig = {
 	mode: 'production',
 	output: {
-		uniqueName: 'app',
-		devtoolNamespace: 'app',
+		uniqueName: 'app', // TODO: change my name to micro app name
+		devtoolNamespace: 'app', // TODO: change my name to micro app name
 		library: {
 			type: 'system',
-			name: 'app'
+			name: 'app' // TODO: change my name to micro app name
 		}
 	},
 	externals: ['react', 'react-dom', 'react-router-dom', 'single-spa']

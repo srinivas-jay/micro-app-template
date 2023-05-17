@@ -1,14 +1,14 @@
 {
 	"name": "@inscriptors/micro-service",
-	"version": "1.1.0",
+	"version": "0.0.0",
 	"description": "MicroApp",
-	"homepage": "https://github.com/inscriptors/neuro-nexus#readme",
+	"homepage": "https://github.com/inscriptors/micro-app-template#readme",
 	"bugs": {
-		"url": "https://github.com/inscriptors/neuro-nexus/issues"
+		"url": "https://github.com/inscriptors/micro-app-template/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/inscriptors/neuro-nexus.git"
+		"url": "git+https://github.com/inscriptors/micro-app-template.git"
 	},
 	"license": "MIT",
 	"author": "Srinivas Jay <srini.j135@gmail.com>",

@@ -1,8 +1,6 @@
 # MonorepoTemplate
 
-[![Build and deploy pre release packages on Merge to main](https://github.com/inscriptors/micro-app-template/actions/workflows/prerelease.yml/badge.svg)](https://github.com/inscriptors/micro-app-template/actions/workflows/prerelease.yml)
-
-[![Graduate release on Manual Trigger](https://github.com/inscriptors/micro-app-template/actions/workflows/publish.yml/badge.svg)](https://github.com/inscriptors/micro-app-template/actions/workflows/publish.yml)
+[Add Github Actions Badge here]
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
@@ -24,13 +22,30 @@ Build output is in the `dist` directory.
 
 There are two builds for frontend. Once is for Single SPA and another one is for Webpack 5.
 
-Single SPA can be integrated with other frameworks like Angular, React, Vue etc.
+This project is a mono repo that utilizes nx and lerna to create a micro app chatbot component that can be seamlessly incorporated into any web application. It offers two integration options: Single SPA and Webpack 5 Module Federation.
 
-Webpack 5 build is a standalone build which exposes the React app as Federated Module.
+## Installation
 
-This can be integrated with Shell applications.
+    Clone the repository:
+    Navigate to the project directory: cd chatbot
+    Install dependencies: yarn install
 
-Learn more about Webpack 5 here: https://webpack.js.org/concepts/module-federation/
+## Integration Options
+
+### Single SPA:
+
+    To integrate the chatbot component into your web application using Single SPA:
+    Add Single SPA reference and understand its usage and configuration.
+    Visit [Single SPA](https://single-spa.js.org/docs/getting-started-overview) for more information.
+    Import the chatbot component into your Single SPA configuration.
+    Customize the chatbot's appearance and behavior based on your application's requirements.
+
+### Webpack 5 Module Federation:
+
+    To incorporate the chatbot component using Webpack 5
+    Familiarize yourself with Webpack 5 Module Federation. Learn how to share code and components across multiple applications. Visit Webpack 5 Module Federation for more details.
+    Configure your Webpack setup to include the chatbot module.
+    Customize the chatbot's styling and functionality to suit your application's needs.
 
 ## Remote caching
 

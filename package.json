@@ -1,6 +1,6 @@
 {
 	"name": "monorepo-template",
-	"version": "1.2.0",
+	"version": "0.0.0",
 	"private": true,
 	"license": "MIT",
 	"workspaces": [
@@ -23,10 +23,6 @@
 		}
 	},
 	"dependencies": {
-		"@inscriptors/api-services": "^1.0.0",
-		"@inscriptors/ui-kit": "^0.1.0-alpha.5",
-		"@inscriptors/ui-styles": "^0.1.0-alpha.3",
-		"@inscriptors/ui-themes": "^0.1.0-alpha.5",
 		"@swc/helpers": "^0.5.1",
 		"express": "^4.18.1",
 		"react": "^18.2.0",
@@ -46,7 +42,6 @@
 		"@commitlint/config-conventional": "^17.6.3",
 		"@commitlint/config-lerna-scopes": "^17.6.3",
 		"@commitlint/config-nx-scopes": "^17.6.4",
-		"@inscriptors/configs": "^1.0.0",
 		"@nrwl/eslint-plugin-nx": "^16.1.4",
 		"@nx/esbuild": "^16.1.4",
 		"@nx/jest": "^16.1.4",

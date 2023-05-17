@@ -7,12 +7,12 @@ const config = async (nxWebpackConfigs, _context) =>
 	// 	name: '@inscriptors/micro-app-name',
 	// 	library: { type: 'var', name: 'chat' },
 	// 	exposes: {
-	// 		'.': `./app/src/index.tsx`
+	// 		'.': `./app/src/index.jsx`
 	// 	},
 	// 	shared: false
 	// });
 	// return merge(
-	// 	federatedModules(nxWebpackConfigs, context),
+	// 	federatedModules(nxWebpackConfigs, _context),
 	// 	commonWebpackConfig
 	// );
 	merge(nxWebpackConfigs, commonWebpackConfig);
