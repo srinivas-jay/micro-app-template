@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0-alpha.0](https://github.com/inscriptors/micro-app-template/compare/v1.1.0...v1.2.0-alpha.0) (2023-05-17)
+
+### Features
+
+-   **micro-app:** added api proxy to connect to backend ([a647686](https://github.com/inscriptors/micro-app-template/commit/a6476868d006be820699b87fed76be9f8753ce00))
+
+# [1.2.0-alpha.0](https://github.com/inscriptors/micro-app-template/compare/v1.1.0...v1.2.0-alpha.0) (2023-05-17)
+
+### Features
+
+-   **micro-app:** added api proxy to connect to backend ([a647686](https://github.com/inscriptors/micro-app-template/commit/a6476868d006be820699b87fed76be9f8753ce00))
+
 # [1.1.0](https://github.com/inscriptors/micro-app-template/compare/v1.1.0-alpha.0...v1.1.0) (2023-05-16)
 
 **Note:** Version bump only for package monorepo-template
